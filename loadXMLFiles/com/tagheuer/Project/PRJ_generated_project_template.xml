@@ -1,0 +1,1756 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ProjectConfig SYSTEM "standard11_1.dtd">
+<ProjectConfig>
+  <ExportedRoleMemberMap>
+    <projectMember><Role roleType="MEMBERS"></Role></projectMember>
+    <projectMember>
+      <Role roleType="PROJECT MANAGER"></Role>
+      <WTPrincipalReference classType="wt.org.WTUser" fullName="Site, Administrator" isInternal="false" surname="Site" userEmail="">
+        <ufid>uid=wcadmin,ou=people,cn=administrativeldap,cn=windchill_11.1,o=ptc|Ldap.th.ch|Ldap.th.ch</ufid>
+        <name>Administrator</name>
+      </WTPrincipalReference>
+    </projectMember>
+    <projectMember><Role roleType="COLLABORATION MANAGER"></Role></projectMember>
+  </ExportedRoleMemberMap>
+  <ExportedGuestMembers></ExportedGuestMembers>
+  <ExportedTemplateFiltering></ExportedTemplateFiltering>
+  <OrgStructure>
+    <DomainStructure>
+      <domainLevel>
+        <parentDomain>/Private</parentDomain>
+        <domainName>System</domainName>
+        <description>The system domain for a context&apos;s administrative objects.</description>
+      </domainLevel>
+      <domainLevel>
+        <parentDomain>/Private</parentDomain>
+        <domainName>Default</domainName>
+        <description>The default domain for a context&apos;s business objects.</description>
+      </domainLevel>
+    </DomainStructure>
+    <FolderStructure>
+      <cabinet>/Default</cabinet>
+      <domainName>/Default</domainName>
+      <rootPath>/</rootPath>
+      <AdHocACLEntrySet>
+        <AdHocACLEntry>
+          <WTPrincipalReference isInternal="true">
+          <groupName>teamMembers</groupName>
+          <groupType>teamMembers</groupType>
+          </WTPrincipalReference>
+          <AccessPermissionSet>
+          <permissionField name="READ"></permissionField>
+          <permissionField name="MODIFY"></permissionField>
+          <permissionField name="DOWNLOAD"></permissionField>
+          <permissionField name="MODIFY_CONTENT"></permissionField>
+          </AccessPermissionSet>
+          <ownerField name="WNC_ACCESS_CONTROL"></ownerField>
+        </AdHocACLEntry>
+        <AdHocACLEntry>
+          <WTPrincipalReference isInternal="true">
+          <groupName>GUEST</groupName>
+          <groupType>GUEST</groupType>
+          </WTPrincipalReference>
+          <AccessPermissionSet>
+          <permissionField name="READ"></permissionField>
+          <permissionField name="DOWNLOAD"></permissionField>
+          </AccessPermissionSet>
+          <ownerField name="WNC_ACCESS_CONTROL"></ownerField>
+        </AdHocACLEntry>
+      </AdHocACLEntrySet>
+      <nestedFolder>
+        <name>General</name>
+        <description> ((null))</description>
+        <domainName>/Default</domainName>
+        <AdHocACLEntrySet>
+          <AdHocACLEntry>
+          <WTPrincipalReference classType="wt.org.WTUser" fullName="Site, Administrator" isInternal="false" surname="Site" userEmail="">
+          <ufid>uid=wcadmin,ou=people,cn=administrativeldap,cn=windchill_11.1,o=ptc|Ldap.th.ch|Ldap.th.ch</ufid>
+          <name>Administrator</name>
+          </WTPrincipalReference>
+          <AccessPermissionSet><permissionField name="ALL"></permissionField></AccessPermissionSet>
+          <ownerField name="WNC_ACCESS_CONTROL"></ownerField>
+          </AdHocACLEntry>
+          <AdHocACLEntry>
+          <WTPrincipalReference isInternal="true">
+          <groupName>teamMembers</groupName>
+          <groupType>teamMembers</groupType>
+          </WTPrincipalReference>
+          <AccessPermissionSet>
+          <permissionField name="READ"></permissionField>
+          <permissionField name="MODIFY"></permissionField>
+          <permissionField name="DOWNLOAD"></permissionField>
+          <permissionField name="MODIFY_CONTENT"></permissionField>
+          </AccessPermissionSet>
+          <ownerField name="WNC_ACCESS_CONTROL"></ownerField>
+          </AdHocACLEntry>
+          <AdHocACLEntry>
+          <WTPrincipalReference isInternal="true">
+          <groupName>GUEST</groupName>
+          <groupType>GUEST</groupType>
+          </WTPrincipalReference>
+          <AccessPermissionSet>
+          <permissionField name="READ"></permissionField>
+          <permissionField name="DOWNLOAD"></permissionField>
+          </AccessPermissionSet>
+          <ownerField name="WNC_ACCESS_CONTROL"></ownerField>
+          </AdHocACLEntry>
+        </AdHocACLEntrySet>
+      </nestedFolder>
+    </FolderStructure>
+  </OrgStructure>
+  <AccessControlRule>
+    <domainName>/System</domainName>
+    <externalTypeId>WCTYPE|wt.workflow.engine.WfExecutionObject</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>teamMembers</groupName>
+      <groupType>teamMembers</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="MODIFY"></permissionField>
+        <permissionField name="CREATE"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/System</domainName>
+    <externalTypeId>WCTYPE|wt.fc.WTObject</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>GUEST</groupName>
+      <groupType>GUEST</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/System</domainName>
+    <externalTypeId>WCTYPE|wt.fc.WTObject</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>teamMembers</groupName>
+      <groupType>teamMembers</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/System</domainName>
+    <externalTypeId>WCTYPE|wt.fc.WTObject</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PROJECT MANAGER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet><permissionField name="ALL"></permissionField></AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/System</domainName>
+    <externalTypeId>WCTYPE|com.ptc.projectmanagement.deliverable.PlanDeliverable</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="false"><name>OWNER</name></WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="MODIFY"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/System</domainName>
+    <externalTypeId>WCTYPE|com.ptc.projectmanagement.deliverable.PlanDeliverable</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>GUEST</groupName>
+      <groupType>GUEST</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet><permissionField name="READ"></permissionField></AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/System</domainName>
+    <externalTypeId>WCTYPE|com.ptc.projectmanagement.deliverable.PlanDeliverable</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>teamMembers</groupName>
+      <groupType>teamMembers</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet><permissionField name="READ"></permissionField></AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/System</domainName>
+    <externalTypeId>WCTYPE|com.ptc.projectmanagement.plan.Plan</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>GUEST</groupName>
+      <groupType>GUEST</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet><permissionField name="READ"></permissionField></AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/System</domainName>
+    <externalTypeId>WCTYPE|com.ptc.projectmanagement.plan.Plan</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>teamMembers</groupName>
+      <groupType>teamMembers</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet><permissionField name="READ"></permissionField></AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/System</domainName>
+    <externalTypeId>WCTYPE|com.ptc.projectmanagement.plan.PlanActivity</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="false"><name>OWNER</name></WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="MODIFY"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/System</domainName>
+    <externalTypeId>WCTYPE|com.ptc.projectmanagement.plan.PlanActivity</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>GUEST</groupName>
+      <groupType>GUEST</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet><permissionField name="READ"></permissionField></AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/System</domainName>
+    <externalTypeId>WCTYPE|com.ptc.projectmanagement.plan.PlanActivity</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>teamMembers</groupName>
+      <groupType>teamMembers</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet><permissionField name="READ"></permissionField></AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/System</domainName>
+    <externalTypeId>WCTYPE|wt.projmgmt.resource.Deliverable</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="false"><name>OWNER</name></WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="MODIFY"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/System</domainName>
+    <externalTypeId>WCTYPE|com.ptc.projectmanagement.assignment.resource.PlanResource</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>teamMembers</groupName>
+      <groupType>teamMembers</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet><permissionField name="READ"></permissionField></AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default</domainName>
+    <externalTypeId>WCTYPE|wt.part.WTPart</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>COLLABORATION MANAGER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet><permissionField name="CHANGE_PERMISSIONS"></permissionField></AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default</domainName>
+    <externalTypeId>WCTYPE|wt.doc.WTDocument</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>COLLABORATION MANAGER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet><permissionField name="CHANGE_PERMISSIONS"></permissionField></AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default</domainName>
+    <externalTypeId>WCTYPE|wt.change2.WTChangeIssue</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>teamMembers</groupName>
+      <groupType>teamMembers</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet><permissionField name="READ"></permissionField></AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default</domainName>
+    <externalTypeId>WCTYPE|wt.change2.WTChangeIssue</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>COLLABORATION MANAGER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet><permissionField name="CHANGE_PERMISSIONS"></permissionField></AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default</domainName>
+    <externalTypeId>WCTYPE|wt.epm.EPMDocument</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>COLLABORATION MANAGER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet><permissionField name="CHANGE_PERMISSIONS"></permissionField></AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default</domainName>
+    <externalTypeId>WCTYPE|wt.change2.WTChangeProposal</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>COLLABORATION MANAGER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet><permissionField name="CHANGE_PERMISSIONS"></permissionField></AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default</domainName>
+    <externalTypeId>WCTYPE|wt.access.AccessPolicyRule</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>GUEST</groupName>
+      <groupType>GUEST</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet><permissionField name="READ"></permissionField></AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default</domainName>
+    <externalTypeId>WCTYPE|wt.access.AccessPolicyRule</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>teamMembers</groupName>
+      <groupType>teamMembers</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet><permissionField name="READ"></permissionField></AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default</domainName>
+    <externalTypeId>WCTYPE|wt.change2.WTChangeOrder2</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>COLLABORATION MANAGER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet><permissionField name="CHANGE_PERMISSIONS"></permissionField></AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default</domainName>
+    <externalTypeId>WCTYPE|wt.change2.WTChangeRequest2</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>COLLABORATION MANAGER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet><permissionField name="CHANGE_PERMISSIONS"></permissionField></AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default</domainName>
+    <externalTypeId>WCTYPE|wt.viewmarkup.WTMarkUp</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="false"><name>OWNER</name></WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet><permissionField name="ALL"></permissionField></AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default</domainName>
+    <externalTypeId>WCTYPE|wt.viewmarkup.WTMarkUp</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>GUEST</groupName>
+      <groupType>GUEST</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default</domainName>
+    <externalTypeId>WCTYPE|wt.viewmarkup.WTMarkUp</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>teamMembers</groupName>
+      <groupType>teamMembers</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet>
+        <permissionField name="READ"></permissionField>
+        <permissionField name="DOWNLOAD"></permissionField>
+      </AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default</domainName>
+    <externalTypeId>WCTYPE|wt.change2.WTVariance</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>teamMembers</groupName>
+      <groupType>teamMembers</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet><permissionField name="READ"></permissionField></AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default</domainName>
+    <externalTypeId>WCTYPE|wt.change2.WTVariance</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>COLLABORATION MANAGER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet><permissionField name="CHANGE_PERMISSIONS"></permissionField></AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default</domainName>
+    <externalTypeId>WCTYPE|wt.meeting.actionitem.DiscreteActionItem</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="false"><name>OWNER</name></WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet><permissionField name="MODIFY"></permissionField></AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default</domainName>
+    <externalTypeId>WCTYPE|wt.meeting.actionitem.DiscreteActionItem</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>GUEST</groupName>
+      <groupType>GUEST</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet><permissionField name="READ"></permissionField></AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default</domainName>
+    <externalTypeId>WCTYPE|wt.meeting.actionitem.DiscreteActionItem</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>teamMembers</groupName>
+      <groupType>teamMembers</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet><permissionField name="READ"></permissionField></AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default</domainName>
+    <externalTypeId>WCTYPE|wt.change2.WTChangeActivity2</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>COLLABORATION MANAGER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet><permissionField name="CHANGE_PERMISSIONS"></permissionField></AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default</domainName>
+    <externalTypeId>WCTYPE|wt.meeting.Meeting</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="false"><name>OWNER</name></WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet><permissionField name="ALL"></permissionField></AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default</domainName>
+    <externalTypeId>WCTYPE|wt.meeting.Meeting</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>GUEST</groupName>
+      <groupType>GUEST</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet><permissionField name="READ"></permissionField></AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default</domainName>
+    <externalTypeId>WCTYPE|wt.meeting.Meeting</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>teamMembers</groupName>
+      <groupType>teamMembers</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet><permissionField name="READ"></permissionField></AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default</domainName>
+    <externalTypeId>WCTYPE|wt.folder.SubFolder</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>COLLABORATION MANAGER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet><permissionField name="CHANGE_PERMISSIONS"></permissionField></AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default</domainName>
+    <externalTypeId>WCTYPE|wt.fc.WTObject</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>teamMembers</groupName>
+      <groupType>teamMembers</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet><permissionField name="CREATE"></permissionField></AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <AccessControlRule>
+    <domainName>/Default</domainName>
+    <externalTypeId>WCTYPE|wt.fc.WTObject</externalTypeId>
+    <lifecycleState>ALL</lifecycleState>
+    <WTPrincipalReference isInternal="true">
+      <groupName>PROJECT MANAGER</groupName>
+      <groupType>roleGroups</groupType>
+    </WTPrincipalReference>
+    <grantPermissionSet><AccessPermissionSet><permissionField name="ALL"></permissionField></AccessPermissionSet></grantPermissionSet>
+  </AccessControlRule>
+  <plan>
+    <MSPPlan>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+&lt;Project xmlns=&quot;http://schemas.microsoft.com/project&quot;&gt;
+      
+  &lt;SaveVersion&gt;14&lt;/SaveVersion&gt;
+      
+  &lt;Title&gt;Project1&lt;/Title&gt;
+      
+  &lt;ScheduleFromStart&gt;1&lt;/ScheduleFromStart&gt;
+      
+  &lt;StartDate&gt;2020-12-22T08:00:00&lt;/StartDate&gt;
+      
+  &lt;FinishDate&gt;2020-12-22T08:00:00&lt;/FinishDate&gt;
+      
+  &lt;FYStartDate&gt;1&lt;/FYStartDate&gt;
+      
+  &lt;CriticalSlackLimit&gt;0&lt;/CriticalSlackLimit&gt;
+      
+  &lt;CurrencyDigits&gt;0&lt;/CurrencyDigits&gt;
+      
+  &lt;CurrencySymbol&gt;$&lt;/CurrencySymbol&gt;
+      
+  &lt;CurrencySymbolPosition&gt;0&lt;/CurrencySymbolPosition&gt;
+      
+  &lt;CalendarUID&gt;1&lt;/CalendarUID&gt;
+      
+  &lt;DefaultStartTime&gt;08:00:00&lt;/DefaultStartTime&gt;
+      
+  &lt;MinutesPerDay&gt;480&lt;/MinutesPerDay&gt;
+      
+  &lt;MinutesPerWeek&gt;2400&lt;/MinutesPerWeek&gt;
+      
+  &lt;DaysPerMonth&gt;20&lt;/DaysPerMonth&gt;
+      
+  &lt;DefaultTaskType&gt;0&lt;/DefaultTaskType&gt;
+      
+  &lt;DefaultFixedCostAccrual&gt;2&lt;/DefaultFixedCostAccrual&gt;
+      
+  &lt;DefaultStandardRate&gt;10&lt;/DefaultStandardRate&gt;
+      
+  &lt;DefaultOvertimeRate&gt;15&lt;/DefaultOvertimeRate&gt;
+      
+  &lt;DurationFormat&gt;7&lt;/DurationFormat&gt;
+      
+  &lt;WorkFormat&gt;2&lt;/WorkFormat&gt;
+      
+  &lt;EditableActualCosts&gt;0&lt;/EditableActualCosts&gt;
+      
+  &lt;HonorConstraints&gt;0&lt;/HonorConstraints&gt;
+      
+  &lt;EarnedValueMethod&gt;0&lt;/EarnedValueMethod&gt;
+      
+  &lt;InsertedProjectsLikeSummary&gt;0&lt;/InsertedProjectsLikeSummary&gt;
+      
+  &lt;MultipleCriticalPaths&gt;0&lt;/MultipleCriticalPaths&gt;
+      
+  &lt;NewTasksEffortDriven&gt;0&lt;/NewTasksEffortDriven&gt;
+      
+  &lt;NewTasksEstimated&gt;1&lt;/NewTasksEstimated&gt;
+      
+  &lt;SplitsInProgressTasks&gt;0&lt;/SplitsInProgressTasks&gt;
+      
+  &lt;SpreadActualCost&gt;0&lt;/SpreadActualCost&gt;
+      
+  &lt;SpreadPercentComplete&gt;0&lt;/SpreadPercentComplete&gt;
+      
+  &lt;TaskUpdatesResource&gt;1&lt;/TaskUpdatesResource&gt;
+      
+  &lt;FiscalYearStart&gt;0&lt;/FiscalYearStart&gt;
+      
+  &lt;WeekStartDay&gt;0&lt;/WeekStartDay&gt;
+      
+  &lt;MoveCompletedEndsBack&gt;0&lt;/MoveCompletedEndsBack&gt;
+      
+  &lt;MoveRemainingStartsBack&gt;0&lt;/MoveRemainingStartsBack&gt;
+      
+  &lt;MoveRemainingStartsForward&gt;0&lt;/MoveRemainingStartsForward&gt;
+      
+  &lt;MoveCompletedEndsForward&gt;0&lt;/MoveCompletedEndsForward&gt;
+      
+  &lt;BaselineForEarnedValue&gt;0&lt;/BaselineForEarnedValue&gt;
+      
+  &lt;AutoAddNewResourcesAndTasks&gt;1&lt;/AutoAddNewResourcesAndTasks&gt;
+      
+  &lt;CurrentDate&gt;2020-12-29T10:37:00&lt;/CurrentDate&gt;
+      
+  &lt;MicrosoftProjectServerURL&gt;1&lt;/MicrosoftProjectServerURL&gt;
+      
+  &lt;Autolink&gt;1&lt;/Autolink&gt;
+      
+  &lt;NewTaskStartDate&gt;0&lt;/NewTaskStartDate&gt;
+      
+  &lt;DefaultTaskEVMethod&gt;0&lt;/DefaultTaskEVMethod&gt;
+      
+  &lt;ProjectExternallyEdited&gt;0&lt;/ProjectExternallyEdited&gt;
+      
+  &lt;ActualsInSync&gt;0&lt;/ActualsInSync&gt;
+      
+  &lt;RemoveFileProperties&gt;0&lt;/RemoveFileProperties&gt;
+      
+  &lt;AdminProject&gt;0&lt;/AdminProject&gt;
+      
+  &lt;ExtendedAttributes&gt;
+            
+    &lt;ExtendedAttribute&gt;
+                  
+      &lt;FieldID&gt;188744000&lt;/FieldID&gt;
+                  
+      &lt;FieldName&gt;Text14&lt;/FieldName&gt;
+                  
+      &lt;Alias&gt;PTC.SOFT_ATTRIBUTE_14&lt;/Alias&gt;
+              
+    &lt;/ExtendedAttribute&gt;
+            
+    &lt;ExtendedAttribute&gt;
+                  
+      &lt;FieldID&gt;188743731&lt;/FieldID&gt;
+                  
+      &lt;FieldName&gt;Text1&lt;/FieldName&gt;
+                  
+      &lt;Alias&gt;PTC.SOFT_ATTRIBUTE_1&lt;/Alias&gt;
+              
+    &lt;/ExtendedAttribute&gt;
+            
+    &lt;ExtendedAttribute&gt;
+                  
+      &lt;FieldID&gt;188743998&lt;/FieldID&gt;
+                  
+      &lt;FieldName&gt;Text12&lt;/FieldName&gt;
+                  
+      &lt;Alias&gt;PTC.SOFT_ATTRIBUTE_12&lt;/Alias&gt;
+              
+    &lt;/ExtendedAttribute&gt;
+            
+    &lt;ExtendedAttribute&gt;
+                  
+      &lt;FieldID&gt;205520904&lt;/FieldID&gt;
+                  
+      &lt;FieldName&gt;Text1&lt;/FieldName&gt;
+                  
+      &lt;Alias&gt;PTC.RESOURCE_TYPE&lt;/Alias&gt;
+              
+    &lt;/ExtendedAttribute&gt;
+            
+    &lt;ExtendedAttribute&gt;
+                  
+      &lt;FieldID&gt;188744011&lt;/FieldID&gt;
+                  
+      &lt;FieldName&gt;Text25&lt;/FieldName&gt;
+                  
+      &lt;Alias&gt;PTC.PROJECT_NAME&lt;/Alias&gt;
+              
+    &lt;/ExtendedAttribute&gt;
+            
+    &lt;ExtendedAttribute&gt;
+                  
+      &lt;FieldID&gt;188744007&lt;/FieldID&gt;
+                  
+      &lt;FieldName&gt;Text21&lt;/FieldName&gt;
+                  
+      &lt;Alias&gt;PTC.RISK_DESC_UPDATE&lt;/Alias&gt;
+              
+    &lt;/ExtendedAttribute&gt;
+            
+    &lt;ExtendedAttribute&gt;
+                  
+      &lt;FieldID&gt;188743748&lt;/FieldID&gt;
+                  
+      &lt;FieldName&gt;Text8&lt;/FieldName&gt;
+                  
+      &lt;Alias&gt;PTC.SOFT_ATTRIBUTE_8&lt;/Alias&gt;
+              
+    &lt;/ExtendedAttribute&gt;
+            
+    &lt;ExtendedAttribute&gt;
+                  
+      &lt;FieldID&gt;188744005&lt;/FieldID&gt;
+                  
+      &lt;FieldName&gt;Text19&lt;/FieldName&gt;
+                  
+      &lt;Alias&gt;PTC.BEFORE_AFTER_DEADLINE&lt;/Alias&gt;
+              
+    &lt;/ExtendedAttribute&gt;
+            
+    &lt;ExtendedAttribute&gt;
+                  
+      &lt;FieldID&gt;188744004&lt;/FieldID&gt;
+                  
+      &lt;FieldName&gt;Text18&lt;/FieldName&gt;
+                  
+      &lt;Alias&gt;PTC.SOFT_ATTRIBUTE_18&lt;/Alias&gt;
+              
+    &lt;/ExtendedAttribute&gt;
+            
+    &lt;ExtendedAttribute&gt;
+                  
+      &lt;FieldID&gt;188744014&lt;/FieldID&gt;
+                  
+      &lt;FieldName&gt;Text28&lt;/FieldName&gt;
+                  
+      &lt;Alias&gt;PTC.ACTION&lt;/Alias&gt;
+              
+    &lt;/ExtendedAttribute&gt;
+            
+    &lt;ExtendedAttribute&gt;
+                  
+      &lt;FieldID&gt;188744016&lt;/FieldID&gt;
+                  
+      &lt;FieldName&gt;Text30&lt;/FieldName&gt;
+                  
+      &lt;Alias&gt;PTC.SERVER&lt;/Alias&gt;
+              
+    &lt;/ExtendedAttribute&gt;
+            
+    &lt;ExtendedAttribute&gt;
+                  
+      &lt;FieldID&gt;188744002&lt;/FieldID&gt;
+                  
+      &lt;FieldName&gt;Text16&lt;/FieldName&gt;
+                  
+      &lt;Alias&gt;PTC.SOFT_ATTRIBUTE_16&lt;/Alias&gt;
+              
+    &lt;/ExtendedAttribute&gt;
+            
+    &lt;ExtendedAttribute&gt;
+                  
+      &lt;FieldID&gt;188743999&lt;/FieldID&gt;
+                  
+      &lt;FieldName&gt;Text13&lt;/FieldName&gt;
+                  
+      &lt;Alias&gt;PTC.SOFT_ATTRIBUTE_13&lt;/Alias&gt;
+              
+    &lt;/ExtendedAttribute&gt;
+            
+    &lt;ExtendedAttribute&gt;
+                  
+      &lt;FieldID&gt;188744001&lt;/FieldID&gt;
+                  
+      &lt;FieldName&gt;Text15&lt;/FieldName&gt;
+                  
+      &lt;Alias&gt;PTC.SOFT_ATTRIBUTE_15&lt;/Alias&gt;
+              
+    &lt;/ExtendedAttribute&gt;
+            
+    &lt;ExtendedAttribute&gt;
+                  
+      &lt;FieldID&gt;205520905&lt;/FieldID&gt;
+                  
+      &lt;FieldName&gt;Text2&lt;/FieldName&gt;
+                  
+      &lt;Alias&gt;PTC.ASSIGNMENT_INFO&lt;/Alias&gt;
+              
+    &lt;/ExtendedAttribute&gt;
+            
+    &lt;ExtendedAttribute&gt;
+                  
+      &lt;FieldID&gt;188744015&lt;/FieldID&gt;
+                  
+      &lt;FieldName&gt;Text29&lt;/FieldName&gt;
+                  
+      &lt;Alias&gt;PTC.ID&lt;/Alias&gt;
+              
+    &lt;/ExtendedAttribute&gt;
+            
+    &lt;ExtendedAttribute&gt;
+                  
+      &lt;FieldID&gt;188743740&lt;/FieldID&gt;
+                  
+      &lt;FieldName&gt;Text4&lt;/FieldName&gt;
+                  
+      &lt;Alias&gt;PTC.SOFT_ATTRIBUTE_4&lt;/Alias&gt;
+              
+    &lt;/ExtendedAttribute&gt;
+            
+    &lt;ExtendedAttribute&gt;
+                  
+      &lt;FieldID&gt;188743734&lt;/FieldID&gt;
+                  
+      &lt;FieldName&gt;Text2&lt;/FieldName&gt;
+                  
+      &lt;Alias&gt;PTC.SOFT_ATTRIBUTE_2&lt;/Alias&gt;
+              
+    &lt;/ExtendedAttribute&gt;
+            
+    &lt;ExtendedAttribute&gt;
+                  
+      &lt;FieldID&gt;188744010&lt;/FieldID&gt;
+                  
+      &lt;FieldName&gt;Text24&lt;/FieldName&gt;
+                  
+      &lt;Alias&gt;PTC.STATUS&lt;/Alias&gt;
+              
+    &lt;/ExtendedAttribute&gt;
+            
+    &lt;ExtendedAttribute&gt;
+                  
+      &lt;FieldID&gt;205521138&lt;/FieldID&gt;
+                  
+      &lt;FieldName&gt;Text28&lt;/FieldName&gt;
+              
+    &lt;/ExtendedAttribute&gt;
+            
+    &lt;ExtendedAttribute&gt;
+                  
+      &lt;FieldID&gt;188744003&lt;/FieldID&gt;
+                  
+      &lt;FieldName&gt;Text17&lt;/FieldName&gt;
+                  
+      &lt;Alias&gt;PTC.SOFT_ATTRIBUTE_17&lt;/Alias&gt;
+              
+    &lt;/ExtendedAttribute&gt;
+            
+    &lt;ExtendedAttribute&gt;
+                  
+      &lt;FieldID&gt;188743743&lt;/FieldID&gt;
+                  
+      &lt;FieldName&gt;Text5&lt;/FieldName&gt;
+                  
+      &lt;Alias&gt;PTC.SOFT_ATTRIBUTE_5&lt;/Alias&gt;
+              
+    &lt;/ExtendedAttribute&gt;
+            
+    &lt;ExtendedAttribute&gt;
+                  
+      &lt;FieldID&gt;188743997&lt;/FieldID&gt;
+                  
+      &lt;FieldName&gt;Text11&lt;/FieldName&gt;
+                  
+      &lt;Alias&gt;PTC.SOFT_ATTRIBUTE_11&lt;/Alias&gt;
+              
+    &lt;/ExtendedAttribute&gt;
+            
+    &lt;ExtendedAttribute&gt;
+                  
+      &lt;FieldID&gt;205521140&lt;/FieldID&gt;
+                  
+      &lt;FieldName&gt;Text30&lt;/FieldName&gt;
+                  
+      &lt;Alias&gt;PTC.ID&lt;/Alias&gt;
+              
+    &lt;/ExtendedAttribute&gt;
+            
+    &lt;ExtendedAttribute&gt;
+                  
+      &lt;FieldID&gt;188744012&lt;/FieldID&gt;
+                  
+      &lt;FieldName&gt;Text26&lt;/FieldName&gt;
+                  
+      &lt;Alias&gt;PTC.PROJECT_ID&lt;/Alias&gt;
+              
+    &lt;/ExtendedAttribute&gt;
+            
+    &lt;ExtendedAttribute&gt;
+                  
+      &lt;FieldID&gt;188743737&lt;/FieldID&gt;
+                  
+      &lt;FieldName&gt;Text3&lt;/FieldName&gt;
+                  
+      &lt;Alias&gt;PTC.SOFT_ATTRIBUTE_3&lt;/Alias&gt;
+              
+    &lt;/ExtendedAttribute&gt;
+            
+    &lt;ExtendedAttribute&gt;
+                  
+      &lt;FieldID&gt;188743749&lt;/FieldID&gt;
+                  
+      &lt;FieldName&gt;Text9&lt;/FieldName&gt;
+                  
+      &lt;Alias&gt;PTC.SOFT_ATTRIBUTE_9&lt;/Alias&gt;
+              
+    &lt;/ExtendedAttribute&gt;
+            
+    &lt;ExtendedAttribute&gt;
+                  
+      &lt;FieldID&gt;188744009&lt;/FieldID&gt;
+                  
+      &lt;FieldName&gt;Text23&lt;/FieldName&gt;
+                  
+      &lt;Alias&gt;PTC.STATUS_DESC_UPDATE&lt;/Alias&gt;
+              
+    &lt;/ExtendedAttribute&gt;
+            
+    &lt;ExtendedAttribute&gt;
+                  
+      &lt;FieldID&gt;188744013&lt;/FieldID&gt;
+                  
+      &lt;FieldName&gt;Text27&lt;/FieldName&gt;
+                  
+      &lt;Alias&gt;PTC.TYPE_IDENTIFIER&lt;/Alias&gt;
+              
+    &lt;/ExtendedAttribute&gt;
+            
+    &lt;ExtendedAttribute&gt;
+                  
+      &lt;FieldID&gt;188744008&lt;/FieldID&gt;
+                  
+      &lt;FieldName&gt;Text22&lt;/FieldName&gt;
+                  
+      &lt;Alias&gt;PTC.RISK&lt;/Alias&gt;
+              
+    &lt;/ExtendedAttribute&gt;
+            
+    &lt;ExtendedAttribute&gt;
+                  
+      &lt;FieldID&gt;188743747&lt;/FieldID&gt;
+                  
+      &lt;FieldName&gt;Text7&lt;/FieldName&gt;
+                  
+      &lt;Alias&gt;PTC.SOFT_ATTRIBUTE_7&lt;/Alias&gt;
+              
+    &lt;/ExtendedAttribute&gt;
+            
+    &lt;ExtendedAttribute&gt;
+                  
+      &lt;FieldID&gt;188743746&lt;/FieldID&gt;
+                  
+      &lt;FieldName&gt;Text6&lt;/FieldName&gt;
+                  
+      &lt;Alias&gt;PTC.SOFT_ATTRIBUTE_6&lt;/Alias&gt;
+              
+    &lt;/ExtendedAttribute&gt;
+            
+    &lt;ExtendedAttribute&gt;
+                  
+      &lt;FieldID&gt;188743750&lt;/FieldID&gt;
+                  
+      &lt;FieldName&gt;Text10&lt;/FieldName&gt;
+                  
+      &lt;Alias&gt;PTC.SOFT_ATTRIBUTE_10&lt;/Alias&gt;
+              
+    &lt;/ExtendedAttribute&gt;
+        
+  &lt;/ExtendedAttributes&gt;
+      
+  &lt;Calendars&gt;
+            
+    &lt;Calendar&gt;
+                  
+      &lt;UID&gt;1&lt;/UID&gt;
+                  
+      &lt;Name&gt;Standard&lt;/Name&gt;
+                  
+      &lt;IsBaseCalendar&gt;1&lt;/IsBaseCalendar&gt;
+                  
+      &lt;WeekDays&gt;
+                        
+        &lt;WeekDay&gt;
+                              
+          &lt;DayType&gt;1&lt;/DayType&gt;
+                              
+          &lt;DayWorking&gt;0&lt;/DayWorking&gt;
+                          
+        &lt;/WeekDay&gt;
+                        
+        &lt;WeekDay&gt;
+                              
+          &lt;DayType&gt;2&lt;/DayType&gt;
+                              
+          &lt;DayWorking&gt;1&lt;/DayWorking&gt;
+                              
+          &lt;WorkingTimes&gt;
+                                  
+          &lt;WorkingTime&gt;
+                                      
+          &lt;FromTime&gt;08:00:00&lt;/FromTime&gt;
+                                      
+          &lt;ToTime&gt;12:00:00&lt;/ToTime&gt;
+                                  
+          &lt;/WorkingTime&gt;
+                                  
+          &lt;WorkingTime&gt;
+                                      
+          &lt;FromTime&gt;13:00:00&lt;/FromTime&gt;
+                                      
+          &lt;ToTime&gt;17:00:00&lt;/ToTime&gt;
+                                  
+          &lt;/WorkingTime&gt;
+                              
+          &lt;/WorkingTimes&gt;
+                          
+        &lt;/WeekDay&gt;
+                        
+        &lt;WeekDay&gt;
+                              
+          &lt;DayType&gt;3&lt;/DayType&gt;
+                              
+          &lt;DayWorking&gt;1&lt;/DayWorking&gt;
+                              
+          &lt;WorkingTimes&gt;
+                                  
+          &lt;WorkingTime&gt;
+                                      
+          &lt;FromTime&gt;08:00:00&lt;/FromTime&gt;
+                                      
+          &lt;ToTime&gt;12:00:00&lt;/ToTime&gt;
+                                  
+          &lt;/WorkingTime&gt;
+                                  
+          &lt;WorkingTime&gt;
+                                      
+          &lt;FromTime&gt;13:00:00&lt;/FromTime&gt;
+                                      
+          &lt;ToTime&gt;17:00:00&lt;/ToTime&gt;
+                                  
+          &lt;/WorkingTime&gt;
+                              
+          &lt;/WorkingTimes&gt;
+                          
+        &lt;/WeekDay&gt;
+                        
+        &lt;WeekDay&gt;
+                              
+          &lt;DayType&gt;4&lt;/DayType&gt;
+                              
+          &lt;DayWorking&gt;1&lt;/DayWorking&gt;
+                              
+          &lt;WorkingTimes&gt;
+                                  
+          &lt;WorkingTime&gt;
+                                      
+          &lt;FromTime&gt;08:00:00&lt;/FromTime&gt;
+                                      
+          &lt;ToTime&gt;12:00:00&lt;/ToTime&gt;
+                                  
+          &lt;/WorkingTime&gt;
+                                  
+          &lt;WorkingTime&gt;
+                                      
+          &lt;FromTime&gt;13:00:00&lt;/FromTime&gt;
+                                      
+          &lt;ToTime&gt;17:00:00&lt;/ToTime&gt;
+                                  
+          &lt;/WorkingTime&gt;
+                              
+          &lt;/WorkingTimes&gt;
+                          
+        &lt;/WeekDay&gt;
+                        
+        &lt;WeekDay&gt;
+                              
+          &lt;DayType&gt;5&lt;/DayType&gt;
+                              
+          &lt;DayWorking&gt;1&lt;/DayWorking&gt;
+                              
+          &lt;WorkingTimes&gt;
+                                  
+          &lt;WorkingTime&gt;
+                                      
+          &lt;FromTime&gt;08:00:00&lt;/FromTime&gt;
+                                      
+          &lt;ToTime&gt;12:00:00&lt;/ToTime&gt;
+                                  
+          &lt;/WorkingTime&gt;
+                                  
+          &lt;WorkingTime&gt;
+                                      
+          &lt;FromTime&gt;13:00:00&lt;/FromTime&gt;
+                                      
+          &lt;ToTime&gt;17:00:00&lt;/ToTime&gt;
+                                  
+          &lt;/WorkingTime&gt;
+                              
+          &lt;/WorkingTimes&gt;
+                          
+        &lt;/WeekDay&gt;
+                        
+        &lt;WeekDay&gt;
+                              
+          &lt;DayType&gt;6&lt;/DayType&gt;
+                              
+          &lt;DayWorking&gt;1&lt;/DayWorking&gt;
+                              
+          &lt;WorkingTimes&gt;
+                                  
+          &lt;WorkingTime&gt;
+                                      
+          &lt;FromTime&gt;08:00:00&lt;/FromTime&gt;
+                                      
+          &lt;ToTime&gt;12:00:00&lt;/ToTime&gt;
+                                  
+          &lt;/WorkingTime&gt;
+                                  
+          &lt;WorkingTime&gt;
+                                      
+          &lt;FromTime&gt;13:00:00&lt;/FromTime&gt;
+                                      
+          &lt;ToTime&gt;17:00:00&lt;/ToTime&gt;
+                                  
+          &lt;/WorkingTime&gt;
+                              
+          &lt;/WorkingTimes&gt;
+                          
+        &lt;/WeekDay&gt;
+                        
+        &lt;WeekDay&gt;
+                              
+          &lt;DayType&gt;7&lt;/DayType&gt;
+                              
+          &lt;DayWorking&gt;0&lt;/DayWorking&gt;
+                          
+        &lt;/WeekDay&gt;
+                    
+      &lt;/WeekDays&gt;
+              
+    &lt;/Calendar&gt;
+        
+  &lt;/Calendars&gt;
+      
+  &lt;Tasks&gt;
+            
+    &lt;Task&gt;
+                  
+      &lt;UID&gt;0&lt;/UID&gt;
+                  
+      &lt;ID&gt;0&lt;/ID&gt;
+                  
+      &lt;Name&gt;PRJ&lt;/Name&gt;
+                  
+      &lt;Type&gt;0&lt;/Type&gt;
+                  
+      &lt;IsNull&gt;0&lt;/IsNull&gt;
+                  
+      &lt;WBS&gt;1&lt;/WBS&gt;
+                  
+      &lt;OutlineNumber&gt;1&lt;/OutlineNumber&gt;
+                  
+      &lt;OutlineLevel&gt;1&lt;/OutlineLevel&gt;
+                  
+      &lt;Priority&gt;500&lt;/Priority&gt;
+                  
+      &lt;Start&gt;2020-12-22T08:00:00&lt;/Start&gt;
+                  
+      &lt;Finish&gt;2020-12-22T08:00:00&lt;/Finish&gt;
+                  
+      &lt;Duration&gt;PT0H0M0S&lt;/Duration&gt;
+                  
+      &lt;DurationFormat&gt;7&lt;/DurationFormat&gt;
+                  
+      &lt;ResumeValid&gt;0&lt;/ResumeValid&gt;
+                  
+      &lt;EffortDriven&gt;0&lt;/EffortDriven&gt;
+                  
+      &lt;Recurring&gt;0&lt;/Recurring&gt;
+                  
+      &lt;OverAllocated&gt;0&lt;/OverAllocated&gt;
+                  
+      &lt;Estimated&gt;0&lt;/Estimated&gt;
+                  
+      &lt;Milestone&gt;0&lt;/Milestone&gt;
+                  
+      &lt;Summary&gt;1&lt;/Summary&gt;
+                  
+      &lt;Critical&gt;1&lt;/Critical&gt;
+                  
+      &lt;IsSubproject&gt;0&lt;/IsSubproject&gt;
+                  
+      &lt;IsSubprojectReadOnly&gt;0&lt;/IsSubprojectReadOnly&gt;
+                  
+      &lt;ExternalTask&gt;0&lt;/ExternalTask&gt;
+                  
+      &lt;FixedCostAccrual&gt;3&lt;/FixedCostAccrual&gt;
+                  
+      &lt;PercentWorkComplete&gt;0&lt;/PercentWorkComplete&gt;
+                  
+      &lt;ConstraintType&gt;0&lt;/ConstraintType&gt;
+                  
+      &lt;CalendarUID&gt;-1&lt;/CalendarUID&gt;
+                  
+      &lt;LevelAssignments&gt;0&lt;/LevelAssignments&gt;
+                  
+      &lt;LevelingCanSplit&gt;0&lt;/LevelingCanSplit&gt;
+                  
+      &lt;IgnoreResourceCalendar&gt;0&lt;/IgnoreResourceCalendar&gt;
+                  
+      &lt;HideBar&gt;0&lt;/HideBar&gt;
+                  
+      &lt;Rollup&gt;0&lt;/Rollup&gt;
+                  
+      &lt;EarnedValueMethod&gt;0&lt;/EarnedValueMethod&gt;
+                  
+      &lt;ExtendedAttribute&gt;
+                        
+        &lt;FieldID&gt;188744008&lt;/FieldID&gt;
+                        
+        &lt;Value&gt;UNAVAILABLE&lt;/Value&gt;
+                    
+      &lt;/ExtendedAttribute&gt;
+                  
+      &lt;ExtendedAttribute&gt;
+                        
+        &lt;FieldID&gt;188744010&lt;/FieldID&gt;
+                        
+        &lt;Value&gt;UNAVAILABLE&lt;/Value&gt;
+                    
+      &lt;/ExtendedAttribute&gt;
+                  
+      &lt;ExtendedAttribute&gt;
+                        
+        &lt;FieldID&gt;188744011&lt;/FieldID&gt;
+                        
+        &lt;Value&gt;PRJ&lt;/Value&gt;
+                    
+      &lt;/ExtendedAttribute&gt;
+                  
+      &lt;ExtendedAttribute&gt;
+                        
+        &lt;FieldID&gt;188744012&lt;/FieldID&gt;
+                        
+        &lt;Value&gt;wt.projmgmt.admin.Project2:155878&lt;/Value&gt;
+                    
+      &lt;/ExtendedAttribute&gt;
+                  
+      &lt;ExtendedAttribute&gt;
+                        
+        &lt;FieldID&gt;188744013&lt;/FieldID&gt;
+                        
+        &lt;Value&gt;com.ptc.projectmanagement.plan.Plan&lt;/Value&gt;
+                    
+      &lt;/ExtendedAttribute&gt;
+                  
+      &lt;ExtendedAttribute&gt;
+                        
+        &lt;FieldID&gt;188744014&lt;/FieldID&gt;
+                        
+        &lt;Value&gt;/netmarkets/jsp/plan/EPP_MSP_PlugIn.jsp&lt;/Value&gt;
+                    
+      &lt;/ExtendedAttribute&gt;
+                  
+      &lt;ExtendedAttribute&gt;
+                        
+        &lt;FieldID&gt;188744015&lt;/FieldID&gt;
+                        
+        &lt;Value&gt;com.ptc.projectmanagement.plan.Plan:156310&lt;/Value&gt;
+                    
+      &lt;/ExtendedAttribute&gt;
+                  
+      &lt;ExtendedAttribute&gt;
+                        
+        &lt;FieldID&gt;188744016&lt;/FieldID&gt;
+                        
+        &lt;Value&gt;http://plm.th.ch/Windchill/protocolAuth&lt;/Value&gt;
+                    
+      &lt;/ExtendedAttribute&gt;
+                  
+      &lt;Active&gt;1&lt;/Active&gt;
+                  
+      &lt;Manual&gt;0&lt;/Manual&gt;
+              
+    &lt;/Task&gt;
+            
+    &lt;Task&gt;
+                  
+      &lt;UID&gt;1&lt;/UID&gt;
+                  
+      &lt;ID&gt;1&lt;/ID&gt;
+                  
+      &lt;Name&gt;Project Start&lt;/Name&gt;
+                  
+      &lt;Type&gt;0&lt;/Type&gt;
+                  
+      &lt;IsNull&gt;0&lt;/IsNull&gt;
+                  
+      &lt;WBS&gt;2&lt;/WBS&gt;
+                  
+      &lt;OutlineNumber&gt;2&lt;/OutlineNumber&gt;
+                  
+      &lt;OutlineLevel&gt;1&lt;/OutlineLevel&gt;
+                  
+      &lt;Priority&gt;500&lt;/Priority&gt;
+                  
+      &lt;Start&gt;2020-12-22T08:00:00&lt;/Start&gt;
+                  
+      &lt;Finish&gt;2020-12-22T08:00:00&lt;/Finish&gt;
+                  
+      &lt;Duration&gt;PT0H0M0S&lt;/Duration&gt;
+                  
+      &lt;DurationFormat&gt;7&lt;/DurationFormat&gt;
+                  
+      &lt;ResumeValid&gt;0&lt;/ResumeValid&gt;
+                  
+      &lt;EffortDriven&gt;1&lt;/EffortDriven&gt;
+                  
+      &lt;Recurring&gt;0&lt;/Recurring&gt;
+                  
+      &lt;OverAllocated&gt;0&lt;/OverAllocated&gt;
+                  
+      &lt;Estimated&gt;0&lt;/Estimated&gt;
+                  
+      &lt;Milestone&gt;1&lt;/Milestone&gt;
+                  
+      &lt;Summary&gt;0&lt;/Summary&gt;
+                  
+      &lt;Critical&gt;1&lt;/Critical&gt;
+                  
+      &lt;IsSubproject&gt;0&lt;/IsSubproject&gt;
+                  
+      &lt;IsSubprojectReadOnly&gt;0&lt;/IsSubprojectReadOnly&gt;
+                  
+      &lt;ExternalTask&gt;0&lt;/ExternalTask&gt;
+                  
+      &lt;FixedCostAccrual&gt;3&lt;/FixedCostAccrual&gt;
+                  
+      &lt;PercentWorkComplete&gt;0&lt;/PercentWorkComplete&gt;
+                  
+      &lt;ConstraintType&gt;0&lt;/ConstraintType&gt;
+                  
+      &lt;CalendarUID&gt;-1&lt;/CalendarUID&gt;
+                  
+      &lt;LevelAssignments&gt;0&lt;/LevelAssignments&gt;
+                  
+      &lt;LevelingCanSplit&gt;0&lt;/LevelingCanSplit&gt;
+                  
+      &lt;IgnoreResourceCalendar&gt;0&lt;/IgnoreResourceCalendar&gt;
+                  
+      &lt;HideBar&gt;0&lt;/HideBar&gt;
+                  
+      &lt;Rollup&gt;0&lt;/Rollup&gt;
+                  
+      &lt;EarnedValueMethod&gt;0&lt;/EarnedValueMethod&gt;
+                  
+      &lt;ExtendedAttribute&gt;
+                        
+        &lt;FieldID&gt;188744005&lt;/FieldID&gt;
+                        
+        &lt;Value&gt;0:0&lt;/Value&gt;
+                    
+      &lt;/ExtendedAttribute&gt;
+                  
+      &lt;ExtendedAttribute&gt;
+                        
+        &lt;FieldID&gt;188744008&lt;/FieldID&gt;
+                        
+        &lt;Value&gt;UNAVAILABLE&lt;/Value&gt;
+                    
+      &lt;/ExtendedAttribute&gt;
+                  
+      &lt;ExtendedAttribute&gt;
+                        
+        &lt;FieldID&gt;188744010&lt;/FieldID&gt;
+                        
+        &lt;Value&gt;UNAVAILABLE&lt;/Value&gt;
+                    
+      &lt;/ExtendedAttribute&gt;
+                  
+      &lt;ExtendedAttribute&gt;
+                        
+        &lt;FieldID&gt;188744013&lt;/FieldID&gt;
+                        
+        &lt;Value&gt;com.ptc.projectmanagement.plan.PlanActivity&lt;/Value&gt;
+                    
+      &lt;/ExtendedAttribute&gt;
+                  
+      &lt;ExtendedAttribute&gt;
+                        
+        &lt;FieldID&gt;188744015&lt;/FieldID&gt;
+                        
+        &lt;Value&gt;com.ptc.projectmanagement.plan.PlanActivity:156325&lt;/Value&gt;
+                    
+      &lt;/ExtendedAttribute&gt;
+                  
+      &lt;Active&gt;1&lt;/Active&gt;
+                  
+      &lt;Manual&gt;0&lt;/Manual&gt;
+              
+    &lt;/Task&gt;
+            
+    &lt;Task&gt;
+                  
+      &lt;UID&gt;2&lt;/UID&gt;
+                  
+      &lt;ID&gt;2&lt;/ID&gt;
+                  
+      &lt;Name&gt;Project Finish&lt;/Name&gt;
+                  
+      &lt;Type&gt;0&lt;/Type&gt;
+                  
+      &lt;IsNull&gt;0&lt;/IsNull&gt;
+                  
+      &lt;WBS&gt;3&lt;/WBS&gt;
+                  
+      &lt;OutlineNumber&gt;3&lt;/OutlineNumber&gt;
+                  
+      &lt;OutlineLevel&gt;1&lt;/OutlineLevel&gt;
+                  
+      &lt;Priority&gt;500&lt;/Priority&gt;
+                  
+      &lt;Start&gt;2020-12-22T08:00:00&lt;/Start&gt;
+                  
+      &lt;Finish&gt;2020-12-22T08:00:00&lt;/Finish&gt;
+                  
+      &lt;Duration&gt;PT0H0M0S&lt;/Duration&gt;
+                  
+      &lt;DurationFormat&gt;7&lt;/DurationFormat&gt;
+                  
+      &lt;ResumeValid&gt;0&lt;/ResumeValid&gt;
+                  
+      &lt;EffortDriven&gt;1&lt;/EffortDriven&gt;
+                  
+      &lt;Recurring&gt;0&lt;/Recurring&gt;
+                  
+      &lt;OverAllocated&gt;0&lt;/OverAllocated&gt;
+                  
+      &lt;Estimated&gt;0&lt;/Estimated&gt;
+                  
+      &lt;Milestone&gt;1&lt;/Milestone&gt;
+                  
+      &lt;Summary&gt;0&lt;/Summary&gt;
+                  
+      &lt;Critical&gt;1&lt;/Critical&gt;
+                  
+      &lt;IsSubproject&gt;0&lt;/IsSubproject&gt;
+                  
+      &lt;IsSubprojectReadOnly&gt;0&lt;/IsSubprojectReadOnly&gt;
+                  
+      &lt;ExternalTask&gt;0&lt;/ExternalTask&gt;
+                  
+      &lt;FixedCostAccrual&gt;3&lt;/FixedCostAccrual&gt;
+                  
+      &lt;PercentWorkComplete&gt;0&lt;/PercentWorkComplete&gt;
+                  
+      &lt;ConstraintType&gt;0&lt;/ConstraintType&gt;
+                  
+      &lt;CalendarUID&gt;-1&lt;/CalendarUID&gt;
+                  
+      &lt;LevelAssignments&gt;0&lt;/LevelAssignments&gt;
+                  
+      &lt;LevelingCanSplit&gt;0&lt;/LevelingCanSplit&gt;
+                  
+      &lt;IgnoreResourceCalendar&gt;0&lt;/IgnoreResourceCalendar&gt;
+                  
+      &lt;HideBar&gt;0&lt;/HideBar&gt;
+                  
+      &lt;Rollup&gt;0&lt;/Rollup&gt;
+                  
+      &lt;EarnedValueMethod&gt;0&lt;/EarnedValueMethod&gt;
+                  
+      &lt;ExtendedAttribute&gt;
+                        
+        &lt;FieldID&gt;188744005&lt;/FieldID&gt;
+                        
+        &lt;Value&gt;0:0&lt;/Value&gt;
+                    
+      &lt;/ExtendedAttribute&gt;
+                  
+      &lt;ExtendedAttribute&gt;
+                        
+        &lt;FieldID&gt;188744008&lt;/FieldID&gt;
+                        
+        &lt;Value&gt;UNAVAILABLE&lt;/Value&gt;
+                    
+      &lt;/ExtendedAttribute&gt;
+                  
+      &lt;ExtendedAttribute&gt;
+                        
+        &lt;FieldID&gt;188744010&lt;/FieldID&gt;
+                        
+        &lt;Value&gt;UNAVAILABLE&lt;/Value&gt;
+                    
+      &lt;/ExtendedAttribute&gt;
+                  
+      &lt;ExtendedAttribute&gt;
+                        
+        &lt;FieldID&gt;188744013&lt;/FieldID&gt;
+                        
+        &lt;Value&gt;com.ptc.projectmanagement.plan.PlanActivity&lt;/Value&gt;
+                    
+      &lt;/ExtendedAttribute&gt;
+                  
+      &lt;ExtendedAttribute&gt;
+                        
+        &lt;FieldID&gt;188744015&lt;/FieldID&gt;
+                        
+        &lt;Value&gt;com.ptc.projectmanagement.plan.PlanActivity:156324&lt;/Value&gt;
+                    
+      &lt;/ExtendedAttribute&gt;
+                  
+      &lt;Active&gt;1&lt;/Active&gt;
+                  
+      &lt;Manual&gt;0&lt;/Manual&gt;
+              
+    &lt;/Task&gt;
+        
+  &lt;/Tasks&gt;
+      
+  &lt;Resources&gt;
+            
+    &lt;Resource&gt;
+                  
+      &lt;UID&gt;1&lt;/UID&gt;
+                  
+      &lt;ID&gt;1&lt;/ID&gt;
+                  
+      &lt;Name&gt;Collaboration Manager&lt;/Name&gt;
+                  
+      &lt;Type&gt;1&lt;/Type&gt;
+                  
+      &lt;IsNull&gt;0&lt;/IsNull&gt;
+                  
+      &lt;MaxUnits&gt;1&lt;/MaxUnits&gt;
+                  
+      &lt;PeakUnits&gt;1&lt;/PeakUnits&gt;
+                  
+      &lt;OverAllocated&gt;0&lt;/OverAllocated&gt;
+                  
+      &lt;CanLevel&gt;0&lt;/CanLevel&gt;
+                  
+      &lt;StandardRateFormat&gt;2&lt;/StandardRateFormat&gt;
+                  
+      &lt;OvertimeRateFormat&gt;3&lt;/OvertimeRateFormat&gt;
+                  
+      &lt;IsGeneric&gt;0&lt;/IsGeneric&gt;
+                  
+      &lt;IsInactive&gt;1&lt;/IsInactive&gt;
+                  
+      &lt;IsEnterprise&gt;0&lt;/IsEnterprise&gt;
+                  
+      &lt;ExtendedAttribute&gt;
+                        
+        &lt;FieldID&gt;205520904&lt;/FieldID&gt;
+                        
+        &lt;Value&gt;WINDCHILL_TEAM_ROLE&lt;/Value&gt;
+                    
+      &lt;/ExtendedAttribute&gt;
+                  
+      &lt;ExtendedAttribute&gt;
+                        
+        &lt;FieldID&gt;205521138&lt;/FieldID&gt;
+                        
+        &lt;Value&gt;COLLABORATION MANAGER&lt;/Value&gt;
+                    
+      &lt;/ExtendedAttribute&gt;
+                  
+      &lt;ExtendedAttribute&gt;
+                        
+        &lt;FieldID&gt;205521140&lt;/FieldID&gt;
+                        
+        &lt;Value&gt;com.ptc.projectmanagement.assignment.resource.PlanResource:155930&lt;/Value&gt;
+                    
+      &lt;/ExtendedAttribute&gt;
+                  
+      &lt;IsBudget&gt;0&lt;/IsBudget&gt;
+                  
+      &lt;AvailabilityPeriods&gt;&lt;/AvailabilityPeriods&gt;
+              
+    &lt;/Resource&gt;
+            
+    &lt;Resource&gt;
+                  
+      &lt;UID&gt;2&lt;/UID&gt;
+                  
+      &lt;ID&gt;2&lt;/ID&gt;
+                  
+      &lt;Name&gt;Members&lt;/Name&gt;
+                  
+      &lt;Type&gt;1&lt;/Type&gt;
+                  
+      &lt;IsNull&gt;0&lt;/IsNull&gt;
+                  
+      &lt;MaxUnits&gt;1&lt;/MaxUnits&gt;
+                  
+      &lt;PeakUnits&gt;1&lt;/PeakUnits&gt;
+                  
+      &lt;OverAllocated&gt;0&lt;/OverAllocated&gt;
+                  
+      &lt;CanLevel&gt;0&lt;/CanLevel&gt;
+                  
+      &lt;StandardRateFormat&gt;2&lt;/StandardRateFormat&gt;
+                  
+      &lt;OvertimeRateFormat&gt;3&lt;/OvertimeRateFormat&gt;
+                  
+      &lt;IsGeneric&gt;0&lt;/IsGeneric&gt;
+                  
+      &lt;IsInactive&gt;1&lt;/IsInactive&gt;
+                  
+      &lt;IsEnterprise&gt;0&lt;/IsEnterprise&gt;
+                  
+      &lt;ExtendedAttribute&gt;
+                        
+        &lt;FieldID&gt;205520904&lt;/FieldID&gt;
+                        
+        &lt;Value&gt;WINDCHILL_TEAM_ROLE&lt;/Value&gt;
+                    
+      &lt;/ExtendedAttribute&gt;
+                  
+      &lt;ExtendedAttribute&gt;
+                        
+        &lt;FieldID&gt;205521138&lt;/FieldID&gt;
+                        
+        &lt;Value&gt;MEMBERS&lt;/Value&gt;
+                    
+      &lt;/ExtendedAttribute&gt;
+                  
+      &lt;ExtendedAttribute&gt;
+                        
+        &lt;FieldID&gt;205521140&lt;/FieldID&gt;
+                        
+        &lt;Value&gt;com.ptc.projectmanagement.assignment.resource.PlanResource:155933&lt;/Value&gt;
+                    
+      &lt;/ExtendedAttribute&gt;
+                  
+      &lt;IsBudget&gt;0&lt;/IsBudget&gt;
+                  
+      &lt;AvailabilityPeriods&gt;&lt;/AvailabilityPeriods&gt;
+              
+    &lt;/Resource&gt;
+            
+    &lt;Resource&gt;
+                  
+      &lt;UID&gt;3&lt;/UID&gt;
+                  
+      &lt;ID&gt;3&lt;/ID&gt;
+                  
+      &lt;Name&gt;Project Manager&lt;/Name&gt;
+                  
+      &lt;Type&gt;1&lt;/Type&gt;
+                  
+      &lt;IsNull&gt;0&lt;/IsNull&gt;
+                  
+      &lt;MaxUnits&gt;1&lt;/MaxUnits&gt;
+                  
+      &lt;PeakUnits&gt;1&lt;/PeakUnits&gt;
+                  
+      &lt;OverAllocated&gt;0&lt;/OverAllocated&gt;
+                  
+      &lt;CanLevel&gt;0&lt;/CanLevel&gt;
+                  
+      &lt;StandardRateFormat&gt;2&lt;/StandardRateFormat&gt;
+                  
+      &lt;OvertimeRateFormat&gt;3&lt;/OvertimeRateFormat&gt;
+                  
+      &lt;IsGeneric&gt;0&lt;/IsGeneric&gt;
+                  
+      &lt;IsInactive&gt;1&lt;/IsInactive&gt;
+                  
+      &lt;IsEnterprise&gt;0&lt;/IsEnterprise&gt;
+                  
+      &lt;ExtendedAttribute&gt;
+                        
+        &lt;FieldID&gt;205520904&lt;/FieldID&gt;
+                        
+        &lt;Value&gt;WINDCHILL_TEAM_ROLE&lt;/Value&gt;
+                    
+      &lt;/ExtendedAttribute&gt;
+                  
+      &lt;ExtendedAttribute&gt;
+                        
+        &lt;FieldID&gt;205521138&lt;/FieldID&gt;
+                        
+        &lt;Value&gt;PROJECT MANAGER&lt;/Value&gt;
+                    
+      &lt;/ExtendedAttribute&gt;
+                  
+      &lt;ExtendedAttribute&gt;
+                        
+        &lt;FieldID&gt;205521140&lt;/FieldID&gt;
+                        
+        &lt;Value&gt;com.ptc.projectmanagement.assignment.resource.PlanResource:156320&lt;/Value&gt;
+                    
+      &lt;/ExtendedAttribute&gt;
+                  
+      &lt;IsBudget&gt;0&lt;/IsBudget&gt;
+                  
+      &lt;AvailabilityPeriods&gt;&lt;/AvailabilityPeriods&gt;
+              
+    &lt;/Resource&gt;
+            
+    &lt;Resource&gt;
+                  
+      &lt;UID&gt;4&lt;/UID&gt;
+                  
+      &lt;ID&gt;4&lt;/ID&gt;
+                  
+      &lt;Name&gt;Site Administrator&lt;/Name&gt;
+                  
+      &lt;Type&gt;1&lt;/Type&gt;
+                  
+      &lt;IsNull&gt;0&lt;/IsNull&gt;
+                  
+      &lt;MaxUnits&gt;1&lt;/MaxUnits&gt;
+                  
+      &lt;PeakUnits&gt;1&lt;/PeakUnits&gt;
+                  
+      &lt;OverAllocated&gt;0&lt;/OverAllocated&gt;
+                  
+      &lt;CanLevel&gt;0&lt;/CanLevel&gt;
+                  
+      &lt;StandardRateFormat&gt;2&lt;/StandardRateFormat&gt;
+                  
+      &lt;OvertimeRateFormat&gt;3&lt;/OvertimeRateFormat&gt;
+                  
+      &lt;IsGeneric&gt;0&lt;/IsGeneric&gt;
+                  
+      &lt;IsInactive&gt;1&lt;/IsInactive&gt;
+                  
+      &lt;IsEnterprise&gt;0&lt;/IsEnterprise&gt;
+                  
+      &lt;ExtendedAttribute&gt;
+                        
+        &lt;FieldID&gt;205520904&lt;/FieldID&gt;
+                        
+        &lt;Value&gt;WINDCHILL_USER&lt;/Value&gt;
+                    
+      &lt;/ExtendedAttribute&gt;
+                  
+      &lt;ExtendedAttribute&gt;
+                        
+        &lt;FieldID&gt;205521138&lt;/FieldID&gt;
+                        
+        &lt;Value&gt;Administrator&lt;/Value&gt;
+                    
+      &lt;/ExtendedAttribute&gt;
+                  
+      &lt;ExtendedAttribute&gt;
+                        
+        &lt;FieldID&gt;205521140&lt;/FieldID&gt;
+                        
+        &lt;Value&gt;com.ptc.projectmanagement.assignment.resource.PlanResource:155900&lt;/Value&gt;
+                    
+      &lt;/ExtendedAttribute&gt;
+                  
+      &lt;IsBudget&gt;0&lt;/IsBudget&gt;
+                  
+      &lt;AvailabilityPeriods&gt;&lt;/AvailabilityPeriods&gt;
+              
+    &lt;/Resource&gt;
+        
+  &lt;/Resources&gt;
+      
+  &lt;Assignments&gt;&lt;/Assignments&gt;
+  
+&lt;/Project&gt;</MSPPlan>
+    <PlanDeliverables>
+      <PlanDeliverable>
+        <activitylineNumber>1</activitylineNumber>
+        <name>Scope</name>
+        <externalTypeId>WCTYPE|com.ptc.projectmanagement.deliverable.PlanDeliverable</externalTypeId>
+        <ObjectID><localId>com.ptc.projectmanagement.deliverable.PlanDeliverable:156338</localId></ObjectID>
+        <ownerInfo><name>Administrator</name></ownerInfo>
+      </PlanDeliverable>
+      <PlanDeliverable>
+        <activitylineNumber>2</activitylineNumber>
+        <name>Post Mortem</name>
+        <externalTypeId>WCTYPE|com.ptc.projectmanagement.deliverable.PlanDeliverable</externalTypeId>
+        <ObjectID><localId>com.ptc.projectmanagement.deliverable.PlanDeliverable:156341</localId></ObjectID>
+        <ownerInfo><name>Administrator</name></ownerInfo>
+      </PlanDeliverable>
+    </PlanDeliverables>
+  </plan>
+  <DiscussionForumTemplate>
+    <name>Project Forum Template</name>
+    <description>This forum captures general project discussions</description>
+    <xmlLobString>        &lt;Structure&gt;
+        &lt;/Structure&gt;</xmlLobString>
+  </DiscussionForumTemplate>
+  <ForumSpec>
+    <templateName>Project Forum Template</templateName>
+    <name>         Project Discussion Forum      </name>
+  </ForumSpec>
+</ProjectConfig>

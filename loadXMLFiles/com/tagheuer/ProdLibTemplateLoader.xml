@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE NmLoader SYSTEM "standardX24.dtd">
+<NmLoader>
+	<csvCreateContainerTemplate handler="wt.inf.template.LoadContainerTemplate.createContainerTemplate">
+		<csvname>CHZ BULGARI Generated Products Template</csvname>
+		<csvenabled>true</csvenabled>
+		<csvxmlPath>loadXMLFiles/com/tagheuer/Products/CHZ_BULGARI_Generated_Products_Template.xml</csvxmlPath> 
+		<csvcontainerClassName>wt.pdmlink.PDMLinkProduct</csvcontainerClassName>
+		<csvparentContainerPath>/wt.inf.container.OrgContainer=TAG HEUER</csvparentContainerPath>
+		<csvdescription>CHZ BULGARI Generated Products Template</csvdescription>
+	</csvCreateContainerTemplate>
+	
+	<csvCreateContainerTemplate handler="wt.inf.template.LoadContainerTemplate.createContainerTemplate">
+		<csvname>H01 AQUARACER Generated Products Template</csvname>
+		<csvenabled>true</csvenabled>
+		<csvxmlPath>loadXMLFiles/com/tagheuer/Products/H01_AQUARACER_Generated_Products_Template.xml</csvxmlPath> 
+		<csvcontainerClassName>wt.pdmlink.PDMLinkProduct</csvcontainerClassName>
+		<csvparentContainerPath>/wt.inf.container.OrgContainer=TAG HEUER</csvparentContainerPath>
+		<csvdescription>H01 AQUARACER Generated Products Template</csvdescription>
+	</csvCreateContainerTemplate>
+	
+	<csvCreateContainerTemplate handler="wt.inf.template.LoadContainerTemplate.createContainerTemplate">
+		<csvname>H07 MONACO Generated Products Template</csvname>
+		<csvenabled>true</csvenabled>
+		<csvxmlPath>loadXMLFiles/com/tagheuer/Products/H07_MONACO_Generated_Products_Template.xml</csvxmlPath> 
+		<csvcontainerClassName>wt.pdmlink.PDMLinkProduct</csvcontainerClassName>
+		<csvparentContainerPath>/wt.inf.container.OrgContainer=TAG HEUER</csvparentContainerPath>
+		<csvdescription>H07 MONACO generated products template</csvdescription>
+	</csvCreateContainerTemplate>
+	
+	<csvCreateContainerTemplate handler="wt.inf.template.LoadContainerTemplate.createContainerTemplate">
+		<csvname>PROD Cornol Generated Products Template</csvname>
+		<csvenabled>true</csvenabled>
+		<csvxmlPath>loadXMLFiles/com/tagheuer/Products/PROD_Cornol_Generated_Products_Template.xml</csvxmlPath> 
+		<csvcontainerClassName>wt.pdmlink.PDMLinkProduct</csvcontainerClassName>
+		<csvparentContainerPath>/wt.inf.container.OrgContainer=TAG HEUER</csvparentContainerPath>
+		<csvdescription>PROD Cornol Generated Products Template</csvdescription>
+	</csvCreateContainerTemplate>
+		
+	<csvCreateContainerTemplate handler="wt.inf.template.LoadContainerTemplate.createContainerTemplate">
+		<csvname>BIBLI ADMIN CAO Generated Library Template</csvname>
+		<csvenabled>true</csvenabled>
+		<csvxmlPath>loadXMLFiles/com/tagheuer/Library/BIBLI_ADMIN_CAO_Generated_Library_Template.xml</csvxmlPath> 
+		<csvcontainerClassName>wt.inf.library.WTLibrary</csvcontainerClassName>
+		<csvparentContainerPath>/wt.inf.container.OrgContainer=TAG HEUER</csvparentContainerPath>
+		<csvdescription>BIBLI ADMIN CAO Generated Library Template</csvdescription>
+	</csvCreateContainerTemplate>
+	
+	<csvCreateContainerTemplate handler="wt.inf.template.LoadContainerTemplate.createContainerTemplate">
+		<csvname>BIBLI Cornol Generated Library Template</csvname>
+		<csvenabled>true</csvenabled>
+		<csvxmlPath>loadXMLFiles/com/tagheuer/Library/BIBLI_Cornol_Generated_Library_Template.xml</csvxmlPath> 
+		<csvcontainerClassName>wt.inf.library.WTLibrary</csvcontainerClassName>
+		<csvparentContainerPath>/wt.inf.container.OrgContainer=TAG HEUER</csvparentContainerPath>
+		<csvdescription>BIBLI Cornol Generated Library Template</csvdescription>
+	</csvCreateContainerTemplate>
+	
+	<csvCreateContainerTemplate handler="wt.inf.template.LoadContainerTemplate.createContainerTemplate">
+		<csvname>BIBLI HAB Generated Library Template</csvname>
+		<csvenabled>true</csvenabled>
+		<csvxmlPath>loadXMLFiles/com/tagheuer/Library/BIBLI_HAB_Generated_Library_Template.xml</csvxmlPath> 
+		<csvcontainerClassName>wt.inf.library.WTLibrary</csvcontainerClassName>
+		<csvparentContainerPath>/wt.inf.container.OrgContainer=TAG HEUER</csvparentContainerPath>
+		<csvdescription>BIBLI HAB Generated Library Template</csvdescription>
+	</csvCreateContainerTemplate>
+	
+	<csvCreateContainerTemplate handler="wt.inf.template.LoadContainerTemplate.createContainerTemplate">
+		<csvname>BIBLI MVT Generated Library Template</csvname>
+		<csvenabled>true</csvenabled>
+		<csvxmlPath>loadXMLFiles/com/tagheuer/Library/BIBLI_MVT_Generated_Library_Template.xml</csvxmlPath> 
+		<csvcontainerClassName>wt.inf.library.WTLibrary</csvcontainerClassName>
+		<csvparentContainerPath>/wt.inf.container.OrgContainer=TAG HEUER</csvparentContainerPath>
+		<csvdescription>BIBLI MVT Generated Library Template</csvdescription>
+	</csvCreateContainerTemplate>
+	
+</NmLoader>
